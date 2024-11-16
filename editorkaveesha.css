@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Koulen&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {text-decoration: none;}
+
+body{
+    width: 100%;
+    background: linear-gradient(45deg,#415057,#000000);
+    background-size: 100% 100%;
+}
+
+
+
+.intro {
+    color: whitesmoke;
+    font-size: 25px;
+    font-family: Exo;
+    padding-left: 200px;
+    padding-top: 110px;
+    position: absolute;
+    animation: fade-up 0.5s;
+}
+
+.name h1{
+    padding-top: 100px;
+}
+
+.name1{
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: Dancing Script;
+    padding-left: 200px;
+    padding-top: 148px;
+    position: absolute;
+    animation: fade-up 0.5s;
+}
+
+.fname{
+    color: #dc7317;
+    font-size: 65px;
+    font-family: Koulen;
+    padding-left: 200px;
+    padding-top: 120px;
+    position: absolute;
+    animation: fade-up 0.5s;
+}
+
+.details1{
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Exo;
+    top: 300px;
+    left: 210px;
+    line-height: 2;
+    position: absolute;
+    text-align: justify;
+    word-spacing: 5px;
+    animation: fade-up 0.5s;
+}
+
+.lname{
+    color: #ffffff;
+    font-size: 65px;
+    font-family: Koulen;
+    padding-left: 200px;
+    padding-top: 185px;
+    position: absolute;
+    animation: fade-up 0.5s;
+}
+
+.image{
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    float: right; 
+    padding-top: 60px;
+    padding-right: 160px;
+    
+}
+
+.image img{
+    border: #C5630C 5px solid;
+    width: 100%; 
+    height: auto; 
+    display: inline-block;
+    animation: fade-up 0.5s;
+}
+
+.socials{
+    padding-top: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.socials img{
+    padding-inline: 15px;
+    width: 30px;
+    height: auto;
+    animation: fade-up 0.5s;
+    height: 50px;
+    width: 50px;
+}
+
+.socials a:hover {
+    transform: translate(0,-10px);
+    transition: .3s;
+
+}
+
+.contributes{
+    background-color: #171717;
+    width: 100%;
+    height: 50px;
+    align-content: center;
+    position: absolute;
+    top: 98%; /* Moves the top edge of the element to the vertical center */
+    color: #ffffff
+}
+
+.contributes h1{
+    padding-left: 40%;
+    font-family: Exo;
+    
+}
+
+.works{
+    margin-top: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.works img{
+    padding-inline: 70px;
+    height: 200px;
+    width: 300px;
+}
+
+
+.works a h2{
+    font-family: Exo;
+    color: #ffffff;
+    margin-left: 100px;
+}
+
+.works a h5 {
+    color: #ffffff;
+    padding-left: 70px;
+    padding-top: 20px;
+    font-family: Exo;
+    font-size: medium;
+}
+
+.works a:hover{
+    transform: translate(0,-20px);
+    transition: .8s;
+}
+
+.back{
+    margin-top: 40px;
+    margin-left: 50%;
+    margin-right: 43%;
+    border: 2px solid #ffffff; 
+    padding: 15px; 
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.back a{
+    color: #ffffff;
+    font-size: 25px;
+    font-family: Exo;
+}

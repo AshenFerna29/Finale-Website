@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* Styling the body element */
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    background-color: black;
+    color: #eee;
+}
+
+/* Styling the navigation bar */
+nav {
+    backdrop-filter: blur(4px); 
+    padding-bottom: 1%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure it is above other elements */
+}
+
+.logo img {
+    height: 75px;
+    width: auto;
+    float: left;
+    padding-left: 35px;
+    padding-top: 10px;
+}
+
+nav{
+    backdrop-filter: blur(4px); 
+    padding-bottom: 1%;
+    position: fixed;
+    width: 100%;  
+}
+
+.logo img{
+    height: 75px;
+    width: auto;
+    float: left;
+    padding-left: 35px;
+    padding-top: 10px;
+}
+
+.nav-links ul{
+    list-style: none;
+    float: right;
+    text-align: center;
+    margin-top: 35px;
+    padding-right: 20px;
+}
+
+.nav-links ul li{
+    display: inline;    
+    padding-inline: 30px;
+}
+
+.nav-links ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Oswald;
+    font-size: 23px;
+}
+
+
+.nav-links ul li a img{
+    position: relative;
+    float: right;
+    width: 60px;
+    height: auto;
+    top: -15px; /* Adjust the value as needed */
+    left: -15px; /* Adjust the value as needed */
+}
+
+.nav-links ul li a:hover:not(.active) {
+    color: #07caf9;
+    transition-duration: 0.4s;
+}
+
+.nav-links ul li a.active {
+    color: #07caf9;
+    /* You can add more styles here, like underline or bold font */
+    text-decoration: underline;
+    font-weight: bold;
+}
+/* Styling the slider section */
+.slider {
+    height: 100vh;
+    margin-top: 130px;
+    position: relative;
+}
+
+/* Styling each item in the slider */
+.slider .list .item {
+    position: absolute;
+    inset: 0 0 0 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+/* Styling images inside slider items */
+.slider .list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Styling the content inside slider items */
+.slider .list .item .content {
+    position: absolute;
+    left: 10%;
+    top: 26%;
+    width: 500px;
+    max-width: 80%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Styling the headings inside slider content */
+.slider .list .item .content h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+/* Styling for the active slider item */
+.slider .list .item.active {
+    opacity: 1;
+    z-index: 10;
+}
+
+/* Styling the arrows for slider navigation */
+.arrows {
+    position: absolute;
+    top: 93%;
+    left: 21px;
+    z-index: 100;
+}
+
+/* Styling the arrow buttons */
+.arrows button {
+    background-color: gray;
+    border: none;
+    font-family: monospace;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: x-large;
+    color: white;
+    transition: .5s;
+}
+
+/* Hover effect for arrow buttons */
+.arrows button:hover {
+    color: black;
+}
+
+/* Styling the thumbnails section */
+.thumbnail {
+    position: absolute;
+    left: 5px;
+    top: 46%;
+    transform: translateY(-50%);
+    z-index: 11;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+/* Styling each thumbnail item */
+.thumbnail .item {
+    width: 100px; /* Adjusted width */
+    height: 70px; /* Adjusted height */
+    transition: .5s;
+    flex-shrink: 0;
+}
+
+/* Styling images inside thumbnail items */
+.thumbnail .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+/* Hover effect for thumbnail images */
+.thumbnail .item:hover img {
+    transform: scale(1.1);
+}
+
+/* Styling for the active thumbnail item */
+.thumbnail .item.active img {
+    border: 2px solid #eee;
+}
+
+/* Responsive design for screens smaller than 678px */
+@media screen and (max-width: 678px) {
+    .thumbnail {
+        right: 10px;
+    }
+    .slider .list .item .content h2 {
+        font-size: 30px;
+    }
+    .arrows {
+        top: 10%;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .nav-links ul li {
+        display: block;
+        padding: 10px 0;
+    }
+	.nav-links ul li a:hover:not(.active) {
+    color: #07caf9;
+    transition-duration: 0.4s;
+	}
+
+	.nav-links ul li a.active {
+    color: #07caf9;
+    /* You can add more styles here, like underline or bold font */
+    text-decoration: underline;
+    font-weight: bold;
+	}
+	
+    .slider {
+        height: auto;
+        margin-top: 70px;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .arrows {
+        top: 90%;
+    }
+
+    .footer-column1,
+    .footer-column2,
+    .footer-column3 {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .footer-column1,
+    .footer-column2 {
+        margin-bottom: 20px;
+    }
+
+    .footer-column3 {
+        margin-top: 0;
+    }
+}
+
+/* Styling the footer */
+.footer-container {
+    position: relative;
+    background-color: rgb(30, 30, 30);
+    width: 100%;
+    height: auto;
+    color: #ddd;
+    justify-content: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-column1,
+.footer-column2,
+.footer-column3 {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+}
+
+.footer-column1 h2,
+.footer-column2 h2 {
+    color: #07caf9;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.footer-column1 a,
+.footer-column2 a {
+    color: #ddd;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer-column1 a:hover,
+.footer-column2 a:hover {
+    color: #07caf9;
+    transition-duration: 0.4s;
+}
+
+.footer-column2 p {
+    color: #fcfcfc;
+    margin-bottom: 10px;
+}
+
+.footer-column3 p {
+    color: #555555;
+    font-family: Oswald;
+    font-size: 18px;
+}
+
+.footer-column3 p a {
+    color: #1f667a;
+}
+
+.footer-column3 {
+    text-align: center;
+}
+
+/* Styling the customization panel */
+.customization {
+    position: fixed;
+    top: 150px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 20;
+}
+
+.customization label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.customization input[type="color"],
+.customization select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Responsive design for the customization panel */
+@media screen and (max-width: 678px) {
+    .customization {
+        top: 100px;
+        right: 5px;
+        padding: 5px;
+    }
+
+    .customization label {
+        font-size: 14px;
+    }
+
+    .customization input[type="color"],
+    .customization select {
+        width: 90%;
+    }
+}

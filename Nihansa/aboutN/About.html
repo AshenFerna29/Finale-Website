@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="About.css">
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentLocation = location.href;
+            const menuItems = document.querySelectorAll('.nav-links ul li a');
+            const menuLength = menuItems.length;
+            for (let i = 0; i < menuLength; i++) {
+                if (menuItems[i].href === currentLocation) {
+                    menuItems[i].className = 'active';
+                }
+            }
+        });
+    </script>
+    <nav>
+        <div class="nav-links">
+            <ul>
+                <li><a href="test.html">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">S.M</a></li>
+                <li><a href="#">@@@@</a></li>
+                <li><a href="#"><img src="user.png" alt="user"></a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="Logo.png" alt="logo">
+        </div>   
+    </nav>
+    
+    <h1>Meet our Team</h1>
+    <div class="container">
+        <div class="student">
+            <img src="ashen.jpg" class="jpg" alt="Ashen">
+            <div class="content">
+                <h3>Ashen</h3>
+                <h4>Roll: Student 1</h4>
+                <p>Splash Screen</p>
+                <p>Shop</p>
+                <p>Content Page</p>
+                <p>Page Editor</p>
+            </div>
+        </div>
+
+        <div class="student">
+            <img src="kaveesha.jpg" class="jpg" alt="Kaveesha">
+            <div class="content">
+                <h3>Kaveesha</h3>
+                <h4>Roll: Student 2</h4>
+                <p>Home Page</p>
+                <p>Feedback</p>
+                <p>Content Page</p>
+                <p>Page Editor</p>   
+            </div>
+        </div>
+
+        <div class="student">
+            <img src="Nihansa.jpg" class="jpg" alt="Nihansa">
+            <div class="content">
+                <h3>Nihansa</h3>
+                <h4>Roll: Student 3</h4>
+                <p>User Profile</p>
+                <p>Team Profile</p>
+                <p>Content Page</p>
+                <p>Page Editor</p>
+            </div>
+        </div>
+
+        <div class="student">
+            <img src="Supundi.jpg" class="jpg" alt="Supundi">
+            <div class="content">
+                <h3>Supundi</h3>
+                <h4>Roll: Student 4</h4>
+                <p>Gallery</p>
+                <p>Site Map</p>
+                <p>Content Page</p>
+                <p>Page Editor</p>
+            </div>
+        </div>
+    </div>
+    <div class = "footer-container">
+        <div class = "footer-column1">
+            <h2>ABOUT</h2>
+            <a href="index.html">HOME</a>
+            <a href="AboutUs.html">TEAM</a>
+            <a href="Shop.html">SHOP</a>
+            <a href="Gallery.html">GALLERY</a>
+        </div>
+
+        <div class = "footer-column2">
+            <h2>CONTACT</h2>
+            <p>+94 11 278 2343</p>
+            <p>zyrrohunger@gmail.com</p>
+        </div>
+
+        <div class="footer-column3">
+           <p>THE ZYRRO CONCEPET Copyright © 2024 THE ZYRRO CONCEPET - All rights reserved. <br>Designed by || <a href="#">Nihansa Sethmi</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Page</title>
+    <link rel="stylesheet" href="contentPage.css">
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentLocation = location.href;
+            const menuItems = document.querySelectorAll('.nav-links ul li a');
+            const menuLength = menuItems.length;
+            for (let i = 0; i < menuLength; i++) {
+                if (menuItems[i].href === currentLocation) {
+                    menuItems[i].className = 'active';
+                }
+            }
+        });
+    </script>
+
+    <div class="container">
+        <header>
+            <h1>Rural Dvelopment For Zero Hunger</h1>
+            <p class="subtitle">Exploring the UN Sustainable Development Goal</p>
+            <p class="description">End hunger, achieve food security and improved nutrition, and promote sustainable agriculture!</p>
+            <nav>
+                <a href="#basic-concept" class="nav-button">Basic Concept</a>
+                <a href="#rural-development" class="nav-button">Rural Development</a>
+                <a href="#feeding-hungry" class="nav-button">Feeding the Hungry</a>
+                <a href="#why-care" class="nav-button">Why You Should Care</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="basic-concept" class="topic-box image-left">
+                <img src="bg_2.jpg" alt="Concept of Zero Hunger" class="image">
+                <div class="content">
+                    <h2>Basic Concept</h2>
+                    <p>Zero hunger is a UN Sustainable Development Goal aiming to end hunger, achieve food security, improve nutrition, and promote sustainable agriculture by 2030. It involves ensuring safe, nutritious food, eliminating malnutrition, increasing agricultural productivity, supporting small-scale food producers, and maintaining genetic diversity. Achieving this goal requires a holistic approach, addressing root causes and promoting sustainable food systems.</p>
+                </div>
+            </section>
+
+            <section id="rural-development" class="topic-box image-right">
+                <div class="content">
+                    <h2>Key Aspects of Rural Development</h2>
+                    <p>Rural development for zero hunger involves modernizing agriculture, improving infrastructure, connecting farmers to markets, providing education and skill development, and ensuring financial inclusion. Modern farming techniques, efficient irrigation systems, and sustainable practices increase productivity and preserve natural resources. Access to markets, fair trade policies, and value chains benefits small-scale producers. Education and skill training enhance farmers' adoption of new technologies.</p>
+                </div>
+                <img src="bg_1.png" alt="Rural Development" class="image">
+            </section>
+
+            <section id="feeding-hungry" class="topic-box image-left">
+                <img src="bg_3.jpeg" alt="Feeding the Hungry" class="image">
+                <div class="content">
+                    <h2>Feeding the Hungry</h2>
+                    <p>Feeding the hungry creates a brighter future by saving lives, helping the poor prosper, and fighting disease. Hunger directly causes the deaths of 3.1 million children per year. Proper nutrition increases earnings and workforce participation by 9.4%. Eradicating hunger boosts poor economies, with eliminating iron deficiency alone increasing productivity by up to 20%. Well-nourished mothers help develop strong immune systems in their babies, reducing the spread of infectious diseases.</p>
+                </div>
+            </section>
+
+            <section id="why-care" class="topic-box image-right">
+                <div class="content">
+                    <h2>Why You Should Care</h2>
+                    <p>Addressing hunger has numerous economic, health, and ethical benefits. It boosts productivity, local and global economies, and improves education. Proper nutrition is crucial for physical and cognitive development, reducing disease susceptibility and healthcare costs. It leads to social development, stability, gender equality, and environmental sustainability. By working towards zero hunger, we contribute to a cascade of positive changes that can transform our world for the better.</p>
+                </div>
+                <img src="bg_4.jpg" alt="Impact of Zero Hunger" class="image">
+            </section>
+
+            <section id="references" class="topic-box center">
+                <div class="content">
+                    <h2>References</h2>
+                    <ul>
+                        <li><a href="https://www.wfp.org/ending-hunger">World Food Programme (2022). Ending Hunger | World Food Programme. [online] www.wfp.org. Available at: https://www.wfp.org/ending-hunger.</a> <br></li>
+                        <li><a href="https://kuna.bbk.eus/en/sdg-2-zero-hunger-what-can-citizens-do/">Ramón, J. (2023). SDG 2: Zero hunger. What can citizens do? [online] BBK Kuna / The social innovation space in Bizkaia. Available at: https://kuna.bbk.eus/en/sdg-2-zero-hunger-what-can-citizens-do/ [Accessed 17 Jul. 2024].</a></li>
+                        <li><a href="https://www.un.org/sustainabledevelopment/hunger/">United Nations (2023). Goal 2: Zero Hunger - United Nations Sustainable Development. [online] United Nations Sustainable Development. Available at: https://www.un.org/sustainabledevelopment/hunger/.‌</a> <br></li>
+                    </ul>
+                </div>  
+            </section>
+        </main>
+    </div>
+
+    <div class = "footer-container">
+        <div class = "footer-column1">
+            <h2>ABOUT</h2>
+            <a href="index.html">HOME</a>
+            <a href="AboutUs.html">TEAM</a>
+            <a href="Shop.html">SHOP</a>
+            <a href="Gallery.html">GALLERY</a>
+        </div>
+
+        <div class = "footer-column2">
+            <h2>CONTACT</h2>
+            <p>+94 11 278 2343</p>
+            <p>zyrrohunger@gmail.com</p>
+        </div>
+
+        <div class="footer-column3">
+           <p>THE ZYRRO CONCEPET Copyright © 2024 THE ZYRRO CONCEPET - All rights reserved. <br>Designed by || <a href="#">Nihansa Sethmi</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

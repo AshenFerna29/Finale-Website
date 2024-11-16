@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap>);
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Playwrite+HR:wght@100..400&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Prevents scrolling while splash screen is active */
+}
+
+.splash {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(52, 52, 52); /* Blue background color */
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+    color: white; /* Text color */
+    padding-top: 15%;
+
+}
+
+.splash h3{
+    font-family: "Playwrite HR", cursive;
+    margin-left: 25%;
+    font-size: 23px;
+    margin-top: 50px;
+    margin-bottom: -130px;
+}
+
+.splash h1{
+    font-family: Oswald;
+    margin-left: 28%;
+    font-size: 70px;
+    margin-top: -100px;
+}
+
+.splash h4{
+    font-family: Arial;
+    margin-left: 34%;
+    margin-top: -60px;
+}
+
+.splash ul{
+    list-style: none;
+    text-align: center;
+    padding-top: 50px;
+    font-family: Arial;
+
+}
+
+.splash ul li{
+    padding-bottom: 18px;
+
+}
+
+.splash img {
+    max-width: 210px; /* Ensure the image fits within its container */
+    height: auto; /* Maintain the aspect ratio */
+    margin-top: -800px;
+    margin-left: 700px;
+    margin-bottom: -35px;
+}
+
+
+.hidden {
+    opacity: 0;
+}

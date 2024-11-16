@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEYRRO HUNGER</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+            
+            z-index: 2; /* Ensures the heading is above other elements */
+        }
+
+        .heading {
+            
+            color: white; /* Adjust the color as needed */
+            font-size: 100px
+        }
+
+        .pic {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the whole area */
+            z-index: 1; /* Ensures the image is below other elements */
+        }
+
+        .nav-links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .nav-links ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        .nav-links ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        .logo img {
+            width: 100px; /* Adjust the size as needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="heading">Thank you For Your payment</h2>
+    </div>
+
+    <img src="pic.jpg" alt="pic" class="pic"> 
+
+    <nav>
+        <div class="nav-links">
+            <ul>
+                <li><a href="test.html">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">S.M</a></li>
+                <li><a href="#">@@@@</a></li>
+                <li><a href="#">
+                    <img src="user.png" alt="user"></a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="logoLw.png" alt="logo">
+        </div>
+    </nav>    
+
+    <script src="index.js"></script>
+</body>
+</html>

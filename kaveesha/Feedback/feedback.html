@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+
+    <form id="feedback-form">
+        <fieldset class="Details">
+            <h1>Feedback Form</h1>
+            <h4>We highly appreciate your Feedback!</h4><br>
+
+            <div id="error-message" class="error-message"></div>
+
+            <label for="email" id="email-label">Email address:</label>
+            <input type="email" id="email" placeholder="Enter your Email Address" required><br><br>
+
+            <div class="names">
+                <label for="firstname">First name:</label>
+                <input type="text" id="firstname" placeholder="First name" required>
+
+                <label for="lastname">Last name:</label>
+                <input type="text" id="lastname" placeholder="Last name" required>
+            </div><br>
+
+            <div class="phone">
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" placeholder="Telephone number" required maxlength="10"><br><br>
+            </div>
+
+            <div class="rates">
+                <p>Rate our website according to our services:</p>
+                <div class="rating-scale">
+                    <input type="radio" id="rate-0" name="rating" value="0" required>
+                    <label for="rate-0">0</label>
+
+                    <input type="radio" id="rate-1" name="rating" value="1">
+                    <label for="rate-1">1</label>
+
+                    <input type="radio" id="rate-2" name="rating" value="2">
+                    <label for="rate-2">2</label>
+
+                    <input type="radio" id="rate-3" name="rating" value="3">
+                    <label for="rate-3">3</label>
+
+                    <input type="radio" id="rate-4" name="rating" value="4">
+                    <label for="rate-4">4</label>
+
+                    <input type="radio" id="rate-5" name="rating" value="5">
+                    <label for="rate-5">5</label>
+
+                    <input type="radio" id="rate-6" name="rating" value="6">
+                    <label for="rate-6">6</label><br><br>
+                </div>
+            </div>
+
+            <div>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" placeholder="Enter your comments here" required></textarea>
+            </div><br>
+            <button type="button" id="preview-button" onclick="previewForm()">Preview</button>
+            
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <div id="preview-section" style="display: none;">
+        <fieldset class="Details">
+            <h1>Preview Feedback</h1><br>
+            <p><strong>Email:</strong> <span id="preview-email"></span></p><br>
+            <p><strong>First Name:</strong> <span id="preview-firstname"></span></p><br>
+            <p><strong>Last Name:</strong> <span id="preview-lastname"></span></p><br>
+            <p><strong>Phone Number:</strong> <span id="preview-phone"></span></p><br>
+            <p><strong>Rating:</strong> <span id="preview-rating"></span></p><br>
+            <p><strong>Comments:</strong> <span id="preview-comments"></span></p><br>
+            <button type="button" onclick="editForm()">Edit</button>
+            <button type="button" onclick="confirmForm()">Confirm</button>
+        </fieldset>
+    </div>
+
+    <div id="confirmation-section" style="display: none;">
+        <fieldset class="Details">
+            <h1>Confirmation</h1>
+            <p>Thank you for your feedback!</p>
+        </fieldset>
+    </div>
+    <div class="footer-container">
+        <div class="footer-column1">
+            <h2>ABOUT</h2>
+            <a href="index.html">HOME</a>
+            <a href="AboutUs.html">TEAM</a>
+            <a href="Shop.html">SHOP</a>
+            <a href="Gallery.html">GALLERY</a>
+        </div>
+
+        <div class="footer-column2">
+            <h2>CONTACT</h2>
+            <p>+94 11 278 2343</p>
+            <p>zyrrohunger@gmail.com</p>
+        </div>
+
+        <div class="footer-column3">
+           <p>THE ZYRRO CONCEPET Copyright © 2024 THE ZYRRO CONCEPET - All rights reserved. <br>Designed by || <a href="#">Kaveesha Sulakshana</a></p>
+        </div>
+
+    </div>
+    <script src="feedback.js"></script>
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - ZYRRO HUNGER CONCEPT</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            background: radial-gradient(circle, #fff, #ef9c9c);
+            padding: 20px;
+            
+            font-family: Arial, sans-serif;
+        }
+
+        header, .footer-container {
+            margin-bottom: 20px;
+        }
+
+        nav {
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(4px); 
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.389);
+}
+
+.logo img {
+    height: 75px;
+    width: auto;
+    float: left;
+    padding-left: 35px;
+    padding-top: 10px;
+}
+
+.nav-links ul {
+    list-style: none;
+    float: right;
+    text-align: center;
+    margin-top: 35px;
+    padding-right: 20px;
+}
+
+.nav-links ul li {
+    display: inline;
+    padding-inline: 30px;
+}
+
+.nav-links ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Oswald;
+    font-size: 23px;
+}
+
+.nav-links ul li a:hover {
+    color: aqua;
+    transition: .3s;
+}
+
+.nav-links ul li a img {
+    position: relative;
+    float: right;
+    width: 60px;
+    height: auto;
+    top: -15px; /* Adjust the value as needed */
+    left: -15px; /* Adjust the value as needed */
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        #cart-summary {
+            margin-top: 20px;
+        }
+
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+
+        .checkout-form {
+            margin-top: 5%;
+        }
+
+        .footer-container{
+    position: absolute; /* Changed to relative to keep it within the flow of the document */
+    background-color: rgb(30, 30, 30);
+	width: 100%;
+	height: 250px;
+	color: #ddd;
+	justify-content: center;
+	box-sizing: border-box;
+
+}
+
+.footer-column1 {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	margin-left: 50%;
+	margin-right: 100px;
+    font-family: Oswald;
+
+}
+
+
+.footer-column1 h2 {
+	color: #07caf9;
+	font-size: 22px;
+	margin-bottom: 20px;
+	margin-left: 80px;
+}
+
+
+.footer-column1 a {
+	color: #ddd;
+	text-decoration: none;
+	margin-bottom: 10px;
+	margin-left: 80px;
+}
+
+
+.footer-column1 a:hover {
+	color: #07caf9;
+	transition-duration: 0.4s;
+}
+
+
+.footer-column2 {
+	display: flex;
+	flex-direction: column;
+	margin-top: -160px;
+	margin-bottom: 5px;
+	margin-left: 1250px;
+	margin-right: 100px;
+	color: #f6f1f1;
+    font-family: Oswald;
+}
+
+
+.footer-column2 h2 {
+	color: #07caf9;
+	font-size: 22px;
+	margin-bottom: 30px;
+
+}
+
+
+.footer-column2 p3 {
+	color: #fcfcfc;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+.footer-column3 P{
+    color: #555555;
+    font-family: Oswald;
+    font-size: 18PX;
+    margin-left: 90px;
+    margin-top: -120px;
+}
+
+.footer-column3 p1{
+    color: #555555;
+    font-family: Oswald;
+    font-size: 18PX;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+.footer-column3 p1 a{
+    color: #1f667a;
+}
+    
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logoLw.png" alt="logo">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="index.html">Shop</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">S.M</a></li>
+                    
+                    <li><a href="user_prof.html"><img src="user.png" alt="user" style="height: 20px;"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="checkout-form">
+        <h1>Checkout</h1>
+        <form id="checkout-form">
+            <fieldset>
+                <legend>Payment Details</legend>
+                <label for="card-number">Card Number:</label>
+                <input type="tel" id="card-number" required maxlength="16">
+                <label for="card-holder">Card Holder Name:</label>
+                <input type="text" id="card-holder" required>
+                <label for="expire-date">Expire Date:</label>
+                <input type="date" id="expire-date" required>
+                <label for="ccv">CCV:</label>
+                <input type="tel" id="ccv" required maxlength="3">
+                <button type="button" onclick="saveFieldset('payment')"class="save">Save</button>
+                <button type="button" onclick="resetFieldset('payment')"class="reset">Reset</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>Billing Address</legend>
+                <label for="address-1">Address Line 1:</label>
+                <input type="text" id="address-1" required>
+                <label for="address-2">Address Line 2:</label>
+                <input type="text" id="address-2" required>
+                <label for="town">Town:</label>
+                <input type="text" id="town" required>
+                <label for="city">City:</label>
+                <input type="text" id="city" required>
+                <label for="country">Country:</label>
+                <input type="text" id="country" required>
+                <label for="zip-code">Zip Code:</label>
+                <input type="tel" id="zip-code" required>
+                <button type="button" onclick="saveFieldset('billing')" class="save">Save</button>
+                <button type="button" onclick="resetFieldset('billing')" class="reset">Reset</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Details</legend>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" required>
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required maxlength="15">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" required>
+                <button type="button" onclick="saveFieldset('contact')"class="save">Save</button>
+                <button type="button" onclick="resetFieldset('contact')"class="reset">Reset</button>
+            </fieldset>
+
+            <div id="cart-summary"></div>
+
+            <button type="submit" id="make-payment">Make Payment</button><br><br>
+        </form>
+    </main>
+
+    <div class="footer-container">
+        <div class="footer-column1">
+            <h2>ABOUT</h2>
+            <a href="HomePage.html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="index.html">Shop</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+
+        <div class="footer-column2">
+            <h2>CONTACT</h2>
+            <p3>+94 11 278 2343</p3>
+            <p3>zyrrohunger@gmail.com</p3>
+        </div>
+
+        <div class="footer-column3">
+            <p>THE ZYRRO CONCEPT &copy; 2024 THE ZYRRO CONCEPT - All rights reserved</p>
+            <p1>Designed by || <a href="Editor.html">Ashen Fernando</a></p1>
+        </div>
+    </div>
+
+    <script>
+        let cart = [];
+
+        function loadCart() {
+            const savedCart = localStorage.getItem('cart');
+            if (savedCart) {
+                cart = JSON.parse(savedCart);
+                displayCartSummary();
+            }
+        }
+
+        function displayCartSummary() {
+            const cartSummaryDiv = document.getElementById('cart-summary');
+            let total = 0;
+            let summaryHTML = '<h2>Cart Summary</h2>';
+
+            cart.forEach(item => {
+                summaryHTML += `
+                    <p>${item.name} (Size: ${item.size}) - Quantity: ${item.quantity} - LKR ${(item.price * item.quantity).toFixed(2)}</p>
+                `;
+                total += item.price * item.quantity;
+            });
+
+            summaryHTML += `<h3>Total: LKR ${total.toFixed(2)}</h3>`;
+            cartSummaryDiv.innerHTML = summaryHTML;
+        }
+
+        function saveFieldset(fieldset) {
+            alert(`${fieldset} details saved!`);
+        }
+
+        function resetFieldset(fieldset) {
+            const inputs = document.querySelectorAll(`fieldset:nth-of-type(${fieldset === 'payment' ? 1 : fieldset === 'billing' ? 2 : 3}) input`);
+            inputs.forEach(input => input.value = '');
+        }
+
+        document.getElementById('checkout-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (this.checkValidity()) {
+                 window.location.href = 'End.html'
+                // Implement order processing logic here
+            } else {
+                alert('Please fill in all required fields before making the payment.');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', loadCart);
+    </script>
+</body>
+</html>

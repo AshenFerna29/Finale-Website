@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zyrro Hunger</title>
+    <link rel="stylesheet" href="HomePage.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <ul>
+                <li><a href="HomePage.html" >Home</a></li>
+                <li><a href="gallery.html" >Gallery</a></li>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="About.html">Team</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+                <li><a href="user_prof.html">
+                    <img src="user.png" alt="user"></a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="logoLw.png" alt="logo">
+        </div>   
+    </nav>
+    <div class="container"> 
+        <video autoplay loop muted class="background-clip">
+            <source src="backgroundV.mp4" type="video/mp4">
+        </video>
+
+        <div class="introduction">
+            <p>Zyrro Hunger is your gateway to making a meaningful impact against food insecurity.<br> Browse our curated collection of merchandise where half of every purchase directly funds food relief efforts for vulnerable populations. Beyond shopping, you can also contribute directly through monetary donations on our platform. Join us in the fight against hunger and help us create a world where no one goes without a meal.</p>
+        </div>
+
+        <div class="main-logo">
+            <img src="logoLw.png" alt="main-logo">
+        </div>
+    </div>
+    
+    <div class="frames">
+        <a href="contentpg.html"  class="gallery">
+            <img src="gallery.jpeg" alt="ashen">
+            <h1>The Role of Food Waste </h1>
+        </a>
+        <a href="contkaveesha.html"  class="shop">
+            <img src="gallery.jpeg" alt="kaveesha">
+            <h1>Food Security</h1>
+        </a>
+        <a href="contentPage.html"  class="team">
+            <img src="gallery.jpeg" alt="nihansa">
+            <h1>Rural Devalopment</h1>
+        </a>
+        <a href="content.html"  class="feedback">
+            <img src="gallery.jpeg"  alt="supundi">
+            <h1>End Hunger</h1>
+        </a>
+    </div>
+    <div class = "footer-container">
+        <div class = "footer-column1">
+            <h2>NAVIGATION</h2>
+            <a href="HomePage.html">HOME</a>
+            <a href="About.html">TEAM</a>
+            <a href="index.html">SHOP</a>
+            <a href="gallery.html">GALLERY</a>
+        </div>
+
+        <div class = "footer-column2">
+            <h2>CONTACT</h2>
+            <p>+94 11 278 2343</p>
+            <p>zyrrohunger@gmail.com</p>
+        </div>
+
+        <div class="footer-column3">
+           <p>THE ZYRRO CONCEPET Copyright © 2024 THE ZYRRO CONCEPET - All rights reserved. <br>Designed by || <a href="#">Kaveesha Sulakshana</a></p>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentLocation = location.href;
+            const menuItems = document.querySelectorAll('.nav-links ul li a');
+            const menuLength = menuItems.length;
+            for (let i = 0; i < menuLength; i++) {
+                if (menuItems[i].href === currentLocation) {
+                    menuItems[i].className = 'active';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

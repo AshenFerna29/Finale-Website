@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Form</title>
+    <link rel="stylesheet" href="use_prof.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <ul>
+                <li><a href="test.html">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#"><img src="user.png" alt="user"></a></li>
+            </ul>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const currentLocation = location.href;
+                    const menuItems = document.querySelectorAll('.nav-links ul li a');
+                    const menuLength = menuItems.length;
+                    for (let i = 0; i < menuLength; i++) {
+                        if (menuItems[i].href === currentLocation) {
+                            menuItems[i].className = 'active';
+                        }
+                    }
+                });
+            </script>
+
+        </div>
+        <div class="logo">
+            <img src="Logo.png" alt="logo">
+        </div>
+    </nav>
+
+    <div class="quiz">
+        <h1>Build Your User Profile</h1>
+        <div class="quiz_section" id="quizSection">
+            <div id="questionBox" class="question"></div>
+
+            <div class="options">
+                <input type="text" id="input" placeholder="Enter your answer">
+                <p id="validationMessage" class="validation-message"></p>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar" id="bar"></div>
+            </div>
+            <div class="button-container">
+                <div id="skipBtnContainer" class="skip">
+                    <button onclick="skipQuestion()">Skip</button>
+                </div>
+                <div id="nextBtnContainer" class="next">
+                    <button onclick="nextQuestion()">Next</button>
+                </div>
+                <div id="submitBtnContainer" class="submit">
+                    <button onclick="submitDetails()">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div id="previewBox" class="preview_box">
+            <h2>Preview of Your Details</h2>
+            <div id="previewContent" class="preview_content"></div>
+        </div>
+    </div>
+    <div class = "footer-container">
+        <div class = "footer-column1">
+            <h2>ABOUT</h2>
+            <a href="index.html">HOME</a>
+            <a href="AboutUs.html">TEAM</a>
+            <a href="Shop.html">SHOP</a>
+            <a href="Gallery.html">GALLERY</a>
+        </div>
+
+        <div class = "footer-column2">
+            <h2>CONTACT</h2>
+            <p>+94 11 278 2343</p>
+            <p>zyrrohunger@gmail.com</p>
+        </div>
+
+        <div class="footer-column3">
+           <p>THE ZYRRO CONCEPET Copyright © 2024 THE ZYRRO CONCEPET - All rights reserved. <br>Designed by || <a href="#">Nihansa Sethmi</a></p>
+        </div>
+    </div>
+    <script src="user_prof.js"></script>
+</body>
+</html>

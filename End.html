@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEYRRO HUNGER</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+            
+            z-index: 2; /* Ensures the heading is above other elements */
+        }
+
+        .heading {
+            
+            color: white; /* Adjust the color as needed */
+            font-size: 100px
+        }
+
+        .pic {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the whole area */
+            z-index: 1; /* Ensures the image is below other elements */
+        }
+
+        .nav-links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .nav-links ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        .nav-links ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        .logo img {
+            width: 100px; /* Adjust the size as needed */
+        }
+        .footer-container{
+    position: absolute; /* Changed to relative to keep it within the flow of the document */
+    background-color: rgb(30, 30, 30);
+	width: 100%;
+	height: 250px;
+	color: #ddd;
+	justify-content: center;
+	box-sizing: border-box;
+    margin: 0;
+
+}
+
+.footer-column1 {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	margin-left: 50%;
+	margin-right: 100px;
+    font-family: Oswald;
+
+}
+
+
+.footer-column1 h2 {
+	color: #07caf9;
+	font-size: 22px;
+	margin-bottom: 20px;
+	margin-left: 80px;
+}
+
+
+.footer-column1 a {
+	color: #ddd;
+	text-decoration: none;
+	margin-bottom: 10px;
+	margin-left: 80px;
+}
+
+
+.footer-column1 a:hover {
+	color: #07caf9;
+	transition-duration: 0.4s;
+}
+
+
+.footer-column2 {
+	display: flex;
+	flex-direction: column;
+	margin-top: -160px;
+	margin-bottom: 5px;
+	margin-left: 1250px;
+	margin-right: 100px;
+	color: #f6f1f1;
+    font-family: Oswald;
+}
+
+
+.footer-column2 h2 {
+	color: #07caf9;
+	font-size: 22px;
+	margin-bottom: 30px;
+
+}
+
+
+.footer-column2 p3 {
+	color: #fcfcfc;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+.footer-column3 P{
+    color: #555555;
+    font-family: Oswald;
+    font-size: 18PX;
+    margin-left: 90px;
+    margin-top: -120px;
+}
+
+.footer-column3 p1{
+    color: #555555;
+    font-family: Oswald;
+    font-size: 18PX;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+.footer-column3 p1 a{
+    color:31, 102, 122;
+}
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="heading">Thank you For Your payment</h2>
+
+       
+    </div>
+
+    <img src="pic.jpg" alt="pic" class="pic"> 
+
+    <div class = "footer-container">
+        <div class = "footer-column1">
+            <h2>ABOUT</h2>
+            <a href="HomePage.html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="index.html">Shop</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+
+        <div class = "footer-column2">
+            <h2>CONTACT</h2>
+            <p3>+94 11 278 2343</p3>
+            <p3>zyrrohunger@gmail.com</p3>
+        </div>
+
+        <div class="footer-column3">
+           <p>THE ZYRRO CONCEPET Copyright © 2024 THE ZYRRO CONCEPET - All rights reserved
+            <br>
+            <p1>Designed by || <a href="#">Ashen Fernando</a></p1>
+        </div>
+
+    </div>
+
+   
+
+    <script src="index.js"></script>
+</body>
+</html>

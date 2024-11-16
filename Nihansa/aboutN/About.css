@@ -1,0 +1,239 @@
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap>);
+
+body {
+    background: linear-gradient(to left,#0791B1,#E3F5F9,#E8E5E5,#BFB7B5,#908B92);
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding-top: 120px; /* Adjust based on the height of your nav */
+}
+
+nav {
+    backdrop-filter: blur(4px); 
+    padding-bottom: 1%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure the nav is above other content */
+}
+
+.logo img {
+    height: 75px;
+    width: auto;
+    float: left;
+    padding-left: 35px;
+    padding-top: 10px;
+}
+
+.nav-links ul {
+    list-style: none;
+    float: right;
+    text-align: center;
+    margin-top: 35px;
+    padding-right: 20px;
+}
+
+.nav-links ul li {
+    display: inline;
+    padding-inline: 30px;
+}
+
+.nav-links ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Oswald;
+    font-size: 23px;
+}
+
+.nav-links ul li a:hover {
+    color: aqua;
+    transition: .3s;
+}
+
+.nav-links ul li a img {
+    position: relative;
+    float: right;
+    width: 60px;
+    height: auto;
+    top: -15px;
+    left: -15px;
+}
+
+.nav_container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px; /* Adjust as necessary */
+    padding: 0;
+    font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', serif;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+}
+
+.student {
+    width: 250px;
+    margin: 20px;
+    padding: 0;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative; /* Added to position content correctly */
+}
+
+.student:hover {
+    transform: scale(1.05);
+}
+
+.jpg {
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+    margin-top: 20%;
+}
+
+.content {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+    overflow: hidden;
+    margin-bottom: 40%;
+}
+
+.student:hover .content {
+    opacity: 1;
+    max-height: 300px;
+    background-color: #CBE2E7;
+    color: black;
+    margin-bottom: 40%;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.content h4 {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.content p {
+    font-size: 0.875rem;
+    margin: 5px 0;
+}
+
+.footer-container{
+    position: absolute; /* Changed to relative to keep it within the flow of the document */
+    background-color: rgb(30, 30, 30);
+	width: 100%;
+	height: 250px;
+	color: #ddd;
+	justify-content: center;
+	box-sizing: border-box;
+
+}
+
+.footer-column1 {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	margin-left: 50%;
+	margin-right: 100px;
+    font-family: Oswald;
+
+}
+
+
+.footer-column1 h2 {
+	color: #07caf9;
+	font-size: 22px;
+	margin-bottom: 20px;
+	margin-left: 80px;
+}
+
+
+.footer-column1 a {
+	color: #ddd;
+	text-decoration: none;
+	margin-bottom: 10px;
+	margin-left: 80px;
+}
+
+
+.footer-column1 a:hover {
+	color: #07caf9;
+	transition-duration: 0.4s;
+}
+
+
+.footer-column2 {
+	display: flex;
+	flex-direction: column;
+	margin-top: -210px;
+	margin-left: 1100px;
+	margin-right: 100px;
+	color: #f6f1f1;
+    font-family: Oswald;
+}
+
+
+.footer-column2 h2 {
+	color: #07caf9;
+	font-size: 22px;
+}
+
+
+.footer-column2 p {
+	color: #fcfcfc;
+	text-decoration: none;
+	margin-bottom: -10px;
+}
+
+.footer-column3 P{
+    color: #555555;
+    font-family: Oswald;
+    font-size: 18PX;
+    margin-left: 70px;
+    margin-top: -110px;
+}
+
+.footer-column3 {
+    color: #555555;
+    font-family: Oswald;
+    font-size: 18PX;
+    margin-left: -50px;
+    margin-bottom: 80%;
+
+}
+
+.footer-column3 p a{
+    color:#1f667a;
+
+}

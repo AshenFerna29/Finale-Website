@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <div class="nav-links">
+            <ul>
+                <li><a href="test.html">Home</a></li>
+                <li><a href="gallery" class=active>Gallery</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#"><img src="user.png" alt="user"></a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="logoLw.png" alt="logo">
+        </div>   
+    </nav>
+
+    <!-- Image slider section -->
+    <div class="slider">
+        <div class="list">
+            <!-- Each item in the slider -->
+            <div class="item active">
+                <img src="img1.jpg" alt="Eradicating Hunger">
+                <div class="content">
+                    <h2>Eradicating Hunger</h2>
+                    <p>Ensuring no one goes to bed hungry by providing access to sufficient food for all, particularly for the most vulnerable populations.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img2.jpg" alt="Food Security">
+                <div class="content">
+                    <h2>Food Security</h2>
+                    <p>Guaranteeing consistent and reliable access to food by stabilizing food supplies and improving resilience against economic, social, and environmental disruptions.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img3.jpg" alt="Improving Nutrition">
+                <div class="content">
+                    <h2>Improving Nutrition</h2>
+                    <p>Enhancing the quality of diets to ensure adequate intake of essential nutrients, reducing malnutrition and related health issues.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img4.jpg" alt="Sustainable Agriculture">
+                <div class="content">
+                    <h2>Sustainable Agriculture</h2>
+                    <p>Promoting farming practices that maintain and restore ecosystems, strengthen the capacity to adapt to climate change, and improve the productivity and incomes of small-scale farmers.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img5.jpg" alt="Support Local Farmers">
+                <div class="content">
+                    <h2>Support Local Farmers</h2>
+                    <p>Investing in small-scale farmers and providing them with the tools and knowledge to improve productivity and sustainability.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img6.jpg" alt="Innovative Technologies">
+                <div class="content">
+                    <h2>Innovative Technologies</h2>
+                    <p>Implementing advanced agricultural techniques and technologies to boost food production and reduce waste.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img7.jpg" alt="Improved Food Distribution">
+                <div class="content">
+                    <h2>Improved Food Distribution</h2>
+                    <p>Enhancing infrastructure and logistics to ensure food reaches those in need efficiently.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img8.jpg" alt="Education and Awareness">
+                <div class="content">
+                    <h2>Education and Awareness</h2>
+                    <p>Promoting nutritional education to encourage healthy eating habits and reduce food waste.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img9.jpg" alt="Food Rescue Program">
+                <div class="content">
+                    <h2>Food Rescue Program</h2>
+                    <p>Food Recovery and Redistribution is a core aspect of the Zero Hunger.This effort aims to tackle food insecurity by redirecting surplus food from stores and other facilities to those in need, instead of allowing it to go to waste.</p>
+                </div>
+            </div>
+        </div>
+		<!-- Navigation buttons for the slider -->
+        <div class="arrows">
+            <button id="prev">&lt;</button>
+            <button id="next">&gt;</button>
+        </div>
+		<!-- Thumbnail images for the slider -->
+        <div class="thumbnail">
+            <div class="item active">
+                <img src="img1.jpg" alt="Thumbnail 1">
+            </div>
+            <div class="item">
+                <img src="img2.jpg" alt="Thumbnail 2">
+            </div>
+            <div class="item">
+                <img src="img3.jpg" alt="Thumbnail 3">
+            </div>
+            <div class="item">
+                <img src="img4.jpg" alt="Thumbnail 4">
+            </div>
+            <div class="item">
+                <img src="img5.jpg" alt="Thumbnail 5">
+            </div>
+            <div class="item">
+                <img src="img6.jpg" alt="Thumbnail 6">
+            </div>
+            <div class="item">
+                <img src="img7.jpg" alt="Thumbnail 7">
+            </div>
+            <div class="item">
+                <img src="img8.jpg" alt="Thumbnail 8">
+            </div>
+            <div class="item">
+                <img src="img9.jpg" alt="Thumbnail 9">
+            </div>
+        </div>
+    </div>
+
+	<!-- Customization section for background color and font style -->
+    <div class="customization">
+        <label for="bg-color">Background Color:</label>
+        <input type="color" id="bg-color" name="bg-color" value="#000000">
+       
+        <label for="font-style">Font Style:</label>
+        <select id="font-style" name="font-style">
+            <option value="'Arial', sans-serif">Arial</option>
+            <option value="'Courier New', monospace">Courier New</option>
+            <option value="'Georgia', serif">Georgia</option>
+            <option value="'Times New Roman', serif">Times New Roman</option>
+            <option value="'Verdana', sans-serif">Verdana</option>
+        </select>
+        
+        <button onclick="applyCustomization()">Apply</button>
+    </div>
+		<!-- Footer section -->
+	<div class = "footer-container">
+        <div class = "footer-column1">
+            <h2>ABOUT</h2>
+            <a href="index.html">HOME</a>
+            <a href="AboutUs.html">TEAM</a>
+            <a href="Shop.html">SHOP</a>
+            <a href="Gallery.html">GALLERY</a>
+        </div>
+
+        <div class = "footer-column2">
+            <h2>CONTACT</h2>
+            <p>+94 11 278 2343</p>
+            <p>zyrrohunger@gmail.com</p>
+        </div>
+
+        <div class="footer-column3">
+           <p>THE ZYRRO CONCEPET Copyright © 2024 THE ZYRRO CONCEPET - All rights reserved. <br>Designed by || <a href="#">Supundi Dinaya Goonerathne</a></p>
+        </div>
+
+    </div>
+	
+    
+	<!-- JavaScript to control the slider functionality and customization -->
+    <script>
+	// Variables for slider and thumbnails
+        const slides = document.querySelectorAll('.slider .list .item');
+        const thumbnails = document.querySelectorAll('.thumbnail .item');
+        const prevButton = document.getElementById('prev');
+        const nextButton = document.getElementById('next');
+        let currentIndex = 0;
+
+		// Function to show the current slide
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+                thumbnails[i].classList.toggle('active', i === index);
+            });
+        }
+		// Functions to navigate to the next and previous slides
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        }
+		
+		// Event listeners for navigation buttons
+        prevButton.addEventListener('click', prevSlide);
+        nextButton.addEventListener('click', nextSlide);
+
+        thumbnails.forEach((thumbnail, index) => {
+            thumbnail.addEventListener('click', () => {
+                showSlide(index);
+                currentIndex = index;
+            });
+        });
+
+        function applyCustomization() {
+            const bgColor = document.getElementById('bg-color').value;
+            const fontStyle = document.getElementById('font-style').value;
+
+            document.body.style.backgroundColor = bgColor;
+            document.body.style.fontFamily = fontStyle;
+        }
+		
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentLocation = location.href;
+            const menuItems = document.querySelectorAll('.nav-links ul li a');
+            const menuLength = menuItems.length;
+            for (let i = 0; i < menuLength; i++) {
+                if (menuItems[i].href === currentLocation) {
+                    menuItems[i].className = 'active';
+                }
+            }
+        });
+    
+    </script>
+</body>
+</html>

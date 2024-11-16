@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(4px); 
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.389);
+}
+
+.logo img {
+    height: 75px;
+    width: auto;
+    float: left;
+    padding-left: 35px;
+    padding-top: 10px;
+}
+
+.nav-links ul {
+    list-style: none;
+    float: right;
+    text-align: center;
+    margin-top: 35px;
+    padding-right: 20px;
+}
+
+.nav-links ul li {
+    display: inline;
+    padding-inline: 30px;
+}
+
+.nav-links ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Oswald;
+    font-size: 23px;
+}
+
+.nav-links ul li a:hover:not(.active) {
+    color: #07caf9;
+    transition-duration: 0.4s;
+}
+
+.nav-links ul li a.active {
+    color: #07caf9;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.nav-links ul li a img {
+    position: relative;
+    float: right;
+    width: 60px;
+    height: auto;
+    top: -15px; /* Adjust the value as needed */
+    left: -15px; /* Adjust the value as needed */
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+    text-align: center;
+    padding: 20px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.col-2 p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    background: #742217;
+    color: #ffffff;
+    padding: 8px 30px;
+    margin-top: 2%;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #ff5900;
+}
+
+.header {
+    background: radial-gradient(circle, #fff, #ffd6d6);
+    padding: 15px 0; /* Add padding to ensure the background gradient is visible */
+}
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 250px;
+    margin-bottom: 20px;
+    transition: transform 0.5s;
+}
+
+.col-4 img {
+    width: 100%;
+}
+
+.categories h2 {
+    text-align: center;
+    margin-top: 5%; /* Adjust to reduce the gap */
+}
+
+.categories .col-4 img {
+    margin-top: 0; /* Remove top margin to reduce the gap */
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+h4{
+    color:#555;
+    font-weight: normal;
+
+}
+.col-4 p{
+    font-size: 18px;
+
+}
+.col-4:hover{
+    transform: translateY(-10px);
+
+}
+.offer{
+    background: radial-gradient(circle, #fff, #ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.col-2 .offer-img{
+    padding: 50px;
+
+}
+small{
+    color: #555;
+    font-size: large;
+}
+label {
+    font-family: "Poppins", sans-serif;
+    margin-right: 10px;
+}
+
+input[type='number'] {
+    padding-left: 5px;
+    font-family: "Poppins", sans-serif;
+    margin-left: 5px;
+}
+
+#buy {
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: medium;
+    color: white;
+    background-color: black;
+    margin-bottom: 5px;
+    transition: background 0.5s, transform 0.3s; /* Add transition for background and transform */
+}
+
+#buy:hover {
+    background-color: #ff5900; /* Change to the desired hover background color */
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+#cart {
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: medium;
+    color: black;
+    background-color: white;
+    transition: background 0.5s, transform 0.3s; /* Add transition for background and transform */
+}
+
+#cart:hover {
+    background-color: lightgrey; /* Change to the desired hover background color */
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+#Size {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 2px;
+    border-radius: 20px;
+    background-color: #ffffff00;
+}
+
+#Size:hover {
+    background-color: lightblue;
+    transform: scale(1.1);
+}
+
+/* New CSS for the fixed cart image */
+.fixed-cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.fixed-cart:hover {
+    transform: scale(1.2);
+}
+
+.fixed-cart::after {
+    content: attr(data-count);
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+.footer-container{
+    position: absolute; /* Changed to relative to keep it within the flow of the document */
+    background-color: rgb(30, 30, 30);
+	width: 100%;
+	height: 250px;
+	color: #ddd;
+	justify-content: center;
+	box-sizing: border-box;
+    margin: 0;
+
+}
+
+.footer-column1 {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	margin-left: 50%;
+	margin-right: 100px;
+    font-family: Oswald;
+
+}
+
+
+.footer-column1 h2 {
+	color: #07caf9;
+	font-size: 22px;
+	margin-bottom: 20px;
+	margin-left: 80px;
+}
+
+
+.footer-column1 a {
+	color: #ddd;
+	text-decoration: none;
+	margin-bottom: 10px;
+	margin-left: 80px;
+}
+
+
+.footer-column1 a:hover {
+	color: #07caf9;
+	transition-duration: 0.4s;
+}
+
+
+.footer-column2 {
+	display: flex;
+	flex-direction: column;
+	margin-top: -160px;
+	margin-bottom: 5px;
+	margin-left: 1250px;
+	margin-right: 100px;
+	color: #f6f1f1;
+    font-family: Oswald;
+}
+
+
+.footer-column2 h2 {
+	color: #07caf9;
+	font-size: 22px;
+	margin-bottom: 30px;
+
+}
+
+
+.footer-column2 p3 {
+	color: #fcfcfc;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+.footer-column3 P{
+    color: #555555;
+    font-family: Oswald;
+    font-size: 18PX;
+    margin-left: 90px;
+    margin-top: -120px;
+}
+
+.footer-column3 p1{
+    color: #555555;
+    font-family: Oswald;
+    font-size: 18PX;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+.footer-column3 p1 a{
+    color:31, 102, 122;
+}
+.checkout-form{
+    width: 650px;
+    margin-left: 10%;
+    
+
+}
+#make-payment{
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: medium;
+    color: white;
+    background-color: black;
+    margin-bottom: 5px;
+    transition: background 0.5s, transform 0.3s; /* Add transition for background and transform */
+
+}
+#make-payment:hover {
+    background-color: lightgrey; /* Change to the desired hover background color */
+    transform: scale(1.1); /* Scale up on hover */
+    color: black;
+}
+.save{
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: medium;
+    color: white;
+    background-color: black;
+    margin-bottom: 5px;
+    transition: background 0.5s, transform 0.3s; /* Add transition for background and transform */
+
+}
+.save:hover{
+    background-color: lightgrey; /* Change to the desired hover background color */
+    transform: scale(1.1); /* Scale up on hover */
+    color: black;
+}
+.reset{
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: medium;
+    color: white;
+    background-color: black;
+    margin-bottom: 5px;
+    transition: background 0.5s, transform 0.3s; /* Add transition for background and transform */
+
+}
+.reset:hover{
+    background-color: lightgrey; /* Change to the desired hover background color */
+    transform: scale(1.1); /* Scale up on hover */
+    color: black;
+
+}
+.pic{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

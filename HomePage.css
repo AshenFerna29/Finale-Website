@@ -1,0 +1,251 @@
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap>);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a {text-decoration: none;}
+
+body{
+    background-color: rgb(52, 52, 52);
+    margin-bottom: 100px;
+}
+
+nav{
+    backdrop-filter: blur(4px); 
+    padding-bottom: 1%;
+    position: fixed;
+    width: 100%;  
+}
+
+.logo img{
+    height: 75px;
+    width: auto;
+    float: left;
+    padding-left: 35px;
+    padding-top: 10px;
+}
+
+.nav-links ul{
+    list-style: none;
+    float: right;
+    text-align: center;
+    margin-top: 35px;
+    padding-right: 20px;
+}
+
+.nav-links ul li{
+    display: inline;    
+    padding-inline: 30px;
+}
+
+.nav-links ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Oswald;
+    font-size: 23px;
+}
+
+
+.nav-links ul li a img{
+    position: relative;
+    float: right;
+    width: 60px;
+    height: auto;
+    top: -15px; /* Adjust the value as needed */
+    left: -15px; /* Adjust the value as needed */
+}
+
+.nav-links ul li a:hover:not(.active) {
+    color: #07caf9;
+    transition-duration: 0.4s;
+}
+
+.nav-links ul li a.active {
+    color: #07caf9;
+    /* You can add more styles here, like underline or bold font */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* To handle any overflow issues */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.background-clip {
+    width: 100%; /* Set the video width to 100% of its container */
+    height: auto;
+    object-fit: cover;
+}
+
+.introduction{
+    font-size: 20px;
+    font-family: Arial;
+    color: white;
+    position: absolute;
+    top: 53%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    line-height: 2;
+}
+
+.main-logo{
+    float: left;
+    position: absolute;
+    z-index: 2;
+}
+
+.main-logo img{
+    padding-top: 5%;
+    padding-left: 8%;
+    width: 40%;
+}
+
+.footer-container{
+    position: absolute; /* Changed to relative to keep it within the flow of the document */
+    background-color: rgb(30, 30, 30);
+	width: 100%;
+	height: 250px;
+	color: #ddd;
+	justify-content: center;
+	box-sizing: border-box;
+
+}
+
+.footer-column1 {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	margin-left: 50%;
+	margin-right: 100px;
+    font-family: Oswald;
+
+}
+
+
+.footer-column1 h2 {
+	color: #07caf9;
+	font-size: 22px;
+	margin-bottom: 20px;
+	margin-left: 80px;
+}
+
+
+.footer-column1 a {
+	color: #ddd;
+	text-decoration: none;
+	margin-bottom: 10px;
+	margin-left: 80px;
+}
+
+
+.footer-column1 a:hover {
+	color: #07caf9;
+	transition-duration: 0.4s;
+}
+
+
+.footer-column2 {
+	display: flex;
+	flex-direction: column;
+	margin-top: -160px;
+	margin-bottom: 5px;
+	margin-left: 1250px;
+	margin-right: 100px;
+	color: #f6f1f1;
+    font-family: Oswald;
+}
+
+
+.footer-column2 h2 {
+	color: #07caf9;
+	font-size: 22px;
+	margin-bottom: 30px;
+
+}
+
+
+.footer-column2 p {
+	color: #fcfcfc;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+.footer-column3 P{
+    color: #555555;
+    font-family: Oswald;
+    font-size: 18PX;
+    margin-left: 90px;
+    margin-top: -120px;
+}
+
+.footer-column3 {
+    color: #555555;
+    font-family: Oswald;
+    font-size: 18PX;
+    margin-left: -50px;
+    margin-top: 50px;
+
+}
+
+.footer-column3 p a{
+    color: #1f667a;
+ 
+}
+
+
+
+
+
+
+.frames{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+
+}
+
+.frames img{
+    height: 200px;
+    width: 300px;
+    padding-inline: 20px;
+    border-radius: 10px;
+    border-radius: 50px;
+}
+
+.frames a h1{
+   
+    font-family: Oswald;
+    color: #07caf9;
+    margin-left: 20px;
+}
+
+.frames a:hover{
+    transform: translate(0,-20px);
+    transition: .8s;
+}
+
+
+
+
+
+
